@@ -1,5 +1,7 @@
 #include"Widget.h"
 
+Widget::Widget(){}
+
 Widget::Widget(bool enabled) : enabled{ enabled } {}
 
 void Widget::enable() {
@@ -13,3 +15,6 @@ void Widget::desable() {
 bool Widget::isEnabled() const {
 	return enabled;
 }
+
+
+

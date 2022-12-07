@@ -4,7 +4,17 @@
 
 //TextBox::TextBox(bool enabled) : Widget(enabled){}
 
+
+TextBox::TextBox()
+{
+}
+
 TextBox::TextBox(bool enabled, const string& value) : Widget(enabled) {}
+
+void TextBox::draw() const
+{
+	cout << "Drawing a textbox\n";
+}
 
 string TextBox::getValue(){
 	

@@ -128,11 +128,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Checkbox.cpp" />
+    <ClCompile Include="FileReader.cpp" />
     <ClCompile Include="Widget.cpp" />
     <ClCompile Include="Textbox.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Checkbox.h" />
+    <ClInclude Include="FileReader.h" />
     <ClInclude Include="Widget.h" />
     <ClInclude Include="Textbox.h" />
   </ItemGroup>
