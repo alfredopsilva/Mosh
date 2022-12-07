@@ -10,7 +10,8 @@ public:
 
 	void displayDate() {
 		cout << "The current date is \n" <<
-			this->getDay() << this->getMonth() << this->getYear(); 
+			this->getDay() << " / " << this->getMonth() << " / " << this->getYear() << endl << 
+			this->getHour() << " : " << this->getMinute() << " : " << this->getSecond();
 	}
 
 };
