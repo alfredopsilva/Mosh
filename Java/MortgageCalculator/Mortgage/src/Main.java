@@ -56,7 +56,7 @@ public class Main {
         );
         System.out.println("Considering this information , your monthly mortgage Payment is : " + ANSI_GREEN
                 + display.format(calculateMortgage(Principal,AnnualInterestRate,Period)) + ANSI_RESET);
-        System.out.println("-- Monthly Balance --\n");
+        System.out.println("\n-- Monthly Balance --\n");
         monthlyBalance(Principal, AnnualInterestRate, Period);
     }
 
