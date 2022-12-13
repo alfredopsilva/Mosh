@@ -1,4 +1,3 @@
-import java.io.FileReader;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
@@ -57,20 +56,21 @@ public class Main {
         );
         System.out.println("Considering this information , your monthly mortgage Payment is : " + ANSI_GREEN
                 + display.format(calculateMortgage(Principal,AnnualInterestRate,Period)) + ANSI_RESET);
-        System.out.println("-- Monthly Balance --");
-        System.out.println(montlyBalance(Principal,AnnualInterestRate,Period ));
+        System.out.println("-- Monthly Balance --\n");
+        monthlyBalance(Principal, AnnualInterestRate, Period);
     }
 
-    public static double montlyBalance(double Principal, double annualInterestRate, short Period)
+    public static void monthlyBalance(double Principal, double annualInterestRate, short Period)
     {
         double balance=0;
         double calculatedInterest = (annualInterestRate / 12)/100;
+        NumberFormat display = NumberFormat.getCurrencyInstance();
 
-        for(int i = 0; i < Period; i++){
-        balance = Principal*((Math.pow((1+calculatedInterest),Period) - Math.pow((1+calculatedInterest),i))
-                            /(Math.pow((1+calculatedInterest),Period) - 1));
+        for(int i = 0; i <= Period; i++){
+        balance = Principal*(((Math.pow((1+calculatedInterest),Period) - Math.pow((1+calculatedInterest),i))
+                            /(Math.pow((1+calculatedInterest),Period) - 1)));
 
+            System.out.println(display.format(balance));
         }
-        return balance;
     }
 }
