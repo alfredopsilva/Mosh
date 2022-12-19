@@ -17,6 +17,7 @@ public class Main {
         int wage = employee.calculateWage(1223);
         employee.displayingInfo(wage);
         Employee.printNumberOfEmployee();
+        ArrayList
 
     }
 }
