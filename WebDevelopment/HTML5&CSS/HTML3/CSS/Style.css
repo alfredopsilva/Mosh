@@ -1,0 +1,56 @@
+html { 
+    font-size: 62.5%;
+}
+
+body{ 
+    font-family: Roboto, sans-serif;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+h1{
+    font-size: 7.594rem;
+    text-align: center;
+}
+
+h4{
+    font-size: 5.063rem;
+    font-weight: 700;
+    margin: 3rem 0;
+
+}
+
+h5{ 
+    font-size: 3.375em;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: 2.25rem;
+    font-family: Bitter,serif;
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+li { 
+    font-size: 1.5rem;
+}
+
+.recipe{ 
+    width: 80%;
+
+}
+
+.recipe__image{ 
+    width: 100%;
+    height: auto;
+}
+
+.recipe__list {
+    margin-bottom: 2rem;
+}
