@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px){
+
+    .responsive__list ul{
+        flex-direction: row;
+        /* float: right; TODO : Floating is not working here. */
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+
+
+    .photogalery{ 
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 15px;
+
+    }
+
+    .photogalery__photo{
+        margin: 5px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .photogalery{ 
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .large--photo { 
+        grid-column: 2 / -1;
+        grid-row: 1 / 2;
+    }
+
+}
