@@ -1,0 +1,58 @@
+html { 
+    font-size: 62.5%;
+}
+
+body{ 
+    font-family: Roboto, sans-serif;
+    display: flex;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 8.594rem;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 2px 2px 0 #000;
+    word-spacing: 1.5rem;
+    margin: 15% 0;
+}
+
+p{
+    font-size: 3.375rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 420px;
+    padding: 8px;
+    font-weight: 300;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+}
+
+.banner { 
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/HTML4/images/jeremy-thomas-E0AHdsENmDg-unsplash_pr6qm2_c_scale\,w_3840.jpg);
+}
+
+.banner__image { 
+    width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.5rem;
+        
+    }
+
+    .banner{ 
+        background-image: url(/HTML4/images/jeremy-thomas-E0AHdsENmDg-unsplash_pr6qm2_c_scale\,w_2299.jpg);
+    }
+}
