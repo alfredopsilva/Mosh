@@ -1,13 +1,27 @@
 
+import { useState } from "react";
 import "./App.css";
-import Like from "./components/Like";
+import { Button } from "./components/Button";
+import { produce } from 'immer';
 
 
 function App() {
 
+const [game, setGame] = useState({
+  id:1, 
+  player: {
+    name: 'John'
+  }
+})
+
+const handleClick = () => {
+  setGame({...game, player: { ... game.player,name: 'Alfredo'}});
+}
+
   return (
     <>
-      <Like onClick={() => {console.log("Clicked")}}/>
+      <h1>Hello {game.player.name} {game.id}</h1>
+      <Button type={"danger"} text={"Change Name"} onClickButton={() => handleClick()}/>
     </>
   );
 }
