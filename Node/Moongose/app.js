@@ -50,7 +50,23 @@ async function createCourse() {
 
 // Retrieving Documents
 async function getCourses(){
-    const courses = await Course.find({author: 'Alfredo'});
+
+    // Comparison Operators
+    // eq = equal 
+    // ne = not equals
+    // gt greater than 
+    // gte greater than or equal to 
+    // lt => less than 
+    // lte
+    // in 
+    // nin 
+
+
+    const courses = await Course
+        .find({author: 'Alfredo'})
+        .limit(10)
+        .sort({name: 1});
+        
     console.log(courses)
 }
 
