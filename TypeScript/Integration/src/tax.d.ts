@@ -1,0 +1,1 @@
+export declare function majorTax(income:number):number; 
